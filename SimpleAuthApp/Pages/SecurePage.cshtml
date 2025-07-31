@@ -1,0 +1,6 @@
+@page
+@model SecurePageModel
+@attribute [Microsoft.AspNetCore.Authorization.Authorize]
+<h2>Secure Page</h2>
+<p>Welcome, @User.Identity.Name!</p>
+<a href="/Logout">Logout</a>
